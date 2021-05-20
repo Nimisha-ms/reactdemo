@@ -1,6 +1,5 @@
 
 import React from 'react'
-import ReactDOM from 'react-dom'
 
 const myname = "Test";
 const currDate = new Date().toLocaleDateString();

@@ -3,6 +3,7 @@ import React from 'react'
 let currDate = new Date(2021, 5, 5, 14);
 //let currDate = new Date();
 currDate = currDate.getHours();
+
 let greetword = '';
 
 const cssStyle = {};

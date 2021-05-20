@@ -1,3 +1,5 @@
+@import url('http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css');
+
 body {
   background-color: #b4f2e1;
   box-sizing: border-box;
@@ -32,4 +34,38 @@ h1{
 
 span{
   color:#eb6383;
+}
+
+.heading_style{
+  padding: 30px 0;
+  text-align : center;
+  font-family: "Ralelway", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+  background-color: #fff;
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+
+.cards{
+  width: 100%;
+  height:auto;
+}
+.card{
+  float: left;
+  margin-right: 150px;
+  margin-bottom: 30px; 
+  background:#FAFAFA;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  transition: transform .2s;
+}
+
+.card:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
 }
