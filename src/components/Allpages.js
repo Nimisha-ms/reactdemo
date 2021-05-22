@@ -17,6 +17,8 @@ const Allpages = (props) => {
         <div><a href="inceffect" alt="inceffect">Increment (useeffect hooks)</a></div>
         <div><a href="contextexample" alt="contextexample">useContext example (usecontext hooks)</a></div>
         <div><a href="changetitle" alt="changetitle">change title(useEffect hooks)</a></div>
+        <div><a href="pokemon" alt="pokemon">Pokemon react api call</a></div>
+        <div><a href="navbar" alt="navbar">Navbar(useparams)</a></div>
     </> 
     )
 }

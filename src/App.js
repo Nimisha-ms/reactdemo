@@ -15,6 +15,10 @@ import Incdec from './components/Incdec/index';
 import Inceffect from './components/Inceffect/index';
 import CompA from './components/Contextexample/CompA';
 import Changetitle from './components/Changetitle/index';
+import Pokemon from './components/Pokemon/ComA';
+import Navbar from './components/Navbar/index';
+import NavbarContact from './components/Navbar/Contact';
+import NavbarAbout from './components/Navbar/About';
 
 const Firstname = createContext();
 const Lastname = createContext();
@@ -45,11 +49,43 @@ const App = () => {
             </Route>
 
             <Route path = '/changetitle' component={Changetitle} />
+            <Route path = '/pokemon' component={Pokemon} />
 
-        </Switch>
+            {/* <Route path = '/navbar' component={Navbar} /> */}
+            {/* <Route path = '/navbar/contact' component={Contact} /> */}
+
+            {/*Nested routes:*/}
+            <Route
+              path="/navbar"
+              render={({ match: { url } }) => (
+                <>
+                  <Route path={`${url}/`} component={Navbar} exact />
+                  <Route path={`${url}/contact`} component={NavbarContact} />        
+                  <Route path={`${url}/about`} component={NavbarAbout} />        
+                </>
+              )}
+            />
+
+            </Switch>
+
+           
+        
   </>
   )
 }
+
+
+// const Navbar = (props) => {
+//   //const { path } = this.props.match;
+//   console.log(props);
+
+//   return(
+//     <Switch>
+//       <Route path='/navbar' exact={true} component={Navbar} />
+//     </Switch>
+//   );
+// };
+
 
 export default App;
 export {Firstname,Lastname};
