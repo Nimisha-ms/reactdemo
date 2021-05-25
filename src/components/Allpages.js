@@ -19,6 +19,8 @@ const Allpages = (props) => {
         <div><a href="changetitle" alt="changetitle">change title(useEffect hooks)</a></div>
         <div><a href="pokemon" alt="pokemon">Pokemon react api call</a></div>
         <div><a href="navbar" alt="navbar">Navbar(useparams)</a></div>
+        {/* <div><a href="reactredux" alt="navbar">Redux(Inc/Dec)</a></div> */}
+        <div><a href="reduxdemo" alt="reduxdemo">Redux(productlisting)</a></div>
     </> 
     )
 }

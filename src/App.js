@@ -1,5 +1,5 @@
-import React, { createContext } from 'react'
-import {Route, Switch} from "react-router-dom"
+import React, { createContext } from 'react';
+import {Route, Switch} from "react-router-dom";
 import Allpages from './components/Allpages';
 import Netflix from './components/Netflix/List';
 import Currdate from './Currdate';
@@ -19,6 +19,10 @@ import Pokemon from './components/Pokemon/ComA';
 import Navbar from './components/Navbar/index';
 import NavbarContact from './components/Navbar/Contact';
 import NavbarAbout from './components/Navbar/About';
+import ProductListing from './components/ProductListing';
+import ProductDetails from './components/ProductDetails';
+import Header from './components/Header';
+
 
 const Firstname = createContext();
 const Lastname = createContext();
@@ -66,8 +70,12 @@ const App = () => {
               )}
             />
 
+        <Route exact path="/reduxdemo" component={ProductListing} />
+         <Route exact path="/product/:productId" exact component={ProductDetails} />
+
             </Switch>
 
+            
            
         
   </>
