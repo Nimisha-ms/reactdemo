@@ -22,6 +22,8 @@ import NavbarAbout from './components/Navbar/About';
 import ProductListing from './components/ProductListing';
 import ProductDetails from './components/ProductDetails';
 import Header from './components/Header';
+import ContactList from './components/Contact/ContactList';
+
 
 
 const Firstname = createContext();
@@ -71,13 +73,10 @@ const App = () => {
             />
 
         <Route exact path="/reduxdemo" component={ProductListing} />
-         <Route exact path="/product/:productId" exact component={ProductDetails} />
+        <Route exact path="/product/:productId" exact component={ProductDetails} />
 
-            </Switch>
-
-            
-           
-        
+        <Route path = '/contactapp' component={ContactList} />
+        </Switch>
   </>
   )
 }

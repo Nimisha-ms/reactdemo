@@ -144,3 +144,12 @@ input {
   justify-content: center;
   align-items: center;
 }
+
+.others { 
+  float: right;
+}
+
+.listcls{
+  margin: 10px 0 10px 0 !important;
+  padding: 2px 2px 2px 2px;
+} 

@@ -21,6 +21,7 @@ const Allpages = (props) => {
         <div><a href="navbar" alt="navbar">Navbar(useparams)</a></div>
         {/* <div><a href="reactredux" alt="navbar">Redux(Inc/Dec)</a></div> */}
         <div><a href="reduxdemo" alt="reduxdemo">Redux(productlisting)</a></div>
+        <div><a href="contactapp" alt="contactapp">Contact App</a></div>
     </> 
     )
 }
