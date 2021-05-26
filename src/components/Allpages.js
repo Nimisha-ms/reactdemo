@@ -22,6 +22,9 @@ const Allpages = (props) => {
         {/* <div><a href="reactredux" alt="navbar">Redux(Inc/Dec)</a></div> */}
         <div><a href="reduxdemo" alt="reduxdemo">Redux(productlisting)</a></div>
         <div><a href="contactapp" alt="contactapp">Contact App</a></div>
+        <div><a href="chkvalid" alt="chkvalid">React Form Validation</a></div>
+        <div><a href="weatherapp" alt="weatherapp">Weather App</a></div>
+        
     </> 
     )
 }

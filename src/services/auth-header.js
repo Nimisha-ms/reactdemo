@@ -24,7 +24,7 @@ import ProductDetails from './components/ProductDetails';
 import Header from './components/Header';
 import ContactList from './components/Contact/ContactList';
 import CheckValidation from './components/CheckValidation/Form';
-import WeatherApp from './components/WeatherApp/index';
+
 
 
 const Firstname = createContext();
@@ -78,7 +78,7 @@ const App = () => {
 
         <Route path = '/contactapp' component={ContactList} />
         <Route path = '/chkvalid' component={CheckValidation} />
-        <Route path = '/weatherapp' component={WeatherApp} />
+        {/* <Route path = '/justauth' component={ReactAuth} /> */}
         </Switch>
   </>
   )
